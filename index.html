@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Coming Soon 4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+		.container {
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			background-color: #2E3FFB;
+			margin-top: 0%;
+		}
+	</style>
+</head>
+<body>
+	
+	<img style="width: 100%; position: absolute; z-index: 10;" src="./images/background.svg" alt="Error loading image">
+	<div class="container">
+		<div style="padding: 0.5rem; margin-left: 12%;">
+			<h3 class="l1-txt1 txt-left p-b-10" style="margin-top: 2em;">
+				Budget ₹0₹1
+			</h3>
+	
+			<p class="txt-left m1-txt1 p-b-60">
+				Stay tuned. We will be posting live udates on the budget day!
+			</p>
+	
+			<div class="flex-w flex-l cd100 p-b-82">
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt3 p-b-9 days">35</span>
+					<span class="s1-txt1">Days</span>
+				</div>
+	
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt3 p-b-9 hours">17</span>
+					<span class="s1-txt1">Hours</span>
+				</div>
+	
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt3 p-b-9 minutes">50</span>
+					<span class="s1-txt1">Minutes</span>
+				</div>
+	
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt3 p-b-9 seconds">39</span>
+					<span class="s1-txt1">Seconds</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+		$('.cd100').countdown100({
+			endtimeYear: 2021,
+			endtimeMonth: 2,
+			endtimeDate: 2,
+			endtimeHours: 9,
+			endtimeMinutes: 30,
+			endtimeSeconds: 0,
+			timeZone: "Asia/Kolkata" 
+		});
+	</script>
+</body>
+</html>
